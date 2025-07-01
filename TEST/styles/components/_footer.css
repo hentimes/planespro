@@ -1,0 +1,11 @@
+/* Archivo: components/_footer.css */
+.footer { background: var(--color-gray-900); color: var(--color-white); padding: 3rem 0; }
+.footer-content { display: grid; grid-template-columns: 1.5fr 1fr; gap: var(--spacing-xl); margin-bottom: var(--spacing-xl); }
+.footer-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; margin-bottom: var(--spacing-md); }
+.footer-logo .logo-text { color: var(--color-white); }
+.footer-info p, .footer-contact, .footer-bottom p { color: var(--color-gray-200); }
+.footer-contact h4 { margin-bottom: var(--spacing-lg); }
+.contact-item { display: flex; align-items: center; gap: 0.5rem; margin-bottom: var(--spacing-md); }
+.footer-bottom { text-align: center; padding-top: var(--spacing-lg); border-top: 1px solid var(--color-gray-600); font-size: 0.9rem; }
+.whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 1500; }
+.whatsapp-float-btn { background: var(--color-whatsapp); color: var(--color-white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: var(--shadow-lg); }

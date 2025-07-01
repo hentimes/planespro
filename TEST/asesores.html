@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Asesores Certificados | PlanesPro.cl</title>
+    <meta name="description" content="Conoce a nuestros especialistas certificados en Isapre. Experiencia comprobada ayudando a familias a optimizar sus planes de salud.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <section class="hero-asesores">
+        <div class="container">
+            <div class="hero-asesores-content">
+                <h1>Nuestros Especialistas Certificados</h1>
+                <p>Asesores profesionales con experiencia comprobada ayudando a familias chilenas a optimizar sus planes de salud.</p>
+                <div class="equipo-stats">
+                    <div class="stat-item">
+                        <strong>800+</strong>
+                        <span>Familias Asesoradas</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>5+</strong>
+                        <span>Años de Experiencia</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>98%</strong>
+                        <span>Satisfacción Cliente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="asesores-detallados">
+        <div class="container">
+            <div class="asesor-detalle">
+                <div class="asesor-info-completa">
+                    <div class="asesor-perfil">
+                        <div class="asesor-avatar-grande">
+                            <img src="img/asesores/henry-farias.png" alt="Henry Farias" class="asesor-foto">
+                        </div>
+                        <div class="asesor-datos">
+                            <h2>Henry Farias</h2>
+                            <p class="asesor-titulo">Especialista Senior en Seguros de Salud</p>
+                            <p class="asesor-descripcion">
+                                Con más de 5 años de experiencia en el mercado de seguros de salud, Henry se especializa en 
+                                análisis personalizados y optimización de costos para familias. Su enfoque responsable ha 
+                                ayudado a más de 500 familias a tomar decisiones informadas sobre sus planes de salud.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonios-asesor">
+                    <h3><i class="fas fa-quote-left"></i> Lo que dicen sus clientes</h3>
+                    <div class="testimonios-carousel-container">
+                        <div class="testimonios-carousel">
+                            <div class="testimonios-slide active">
+                                <div class="testimonios-grid-carousel">
+                                    <div class="testimonio-card">
+                                        <p>"Henry me ayudó a ahorrar $120,000 mensuales. Su análisis fue detallado y honesto."</p>
+                                        <div class="testimonio-author"><strong>María González</strong><span>Madre de 2 hijos</span></div>
+                                    </div>
+                                    <div class="testimonio-card">
+                                        <p>"Lo que más valoro es su honestidad. Me recomendó quedarme en Fonasa. Esa transparencia es única."</p>
+                                        <div class="testimonio-author"><strong>Carlos Mendoza</strong><span>Freelancer, 28 años</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonios-slide">
+                                <div class="testimonios-grid-carousel">
+                                    <div class="testimonio-card">
+                                        <p>"Mi esposo y yo estábamos perdidos. Henry nos guió y encontramos un plan perfecto para nuestra edad."</p>
+                                        <div class="testimonio-author"><strong>Ana y Roberto Silva</strong><span>Pre-jubilados</span></div>
+                                    </div>
+                                    <div class="testimonio-card">
+                                        <p>"Excelente seguimiento post-venta. Después de cambiarme, Henry verificó que todo estuviera funcionando bien."</p>
+                                        <div class="testimonio-author"><strong>Diego Morales</strong><span>Gerente de Ventas</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonios-nav">
+                            <button class="testimonios-nav-btn prev" onclick="prevTestimonios()"><i class="fas fa-chevron-left"></i></button>
+                            <div class="testimonios-dots">
+                                <span class="testimonios-dot active" onclick="showTestimonios(0)"></span>
+                                <span class="testimonios-dot" onclick="showTestimonios(1)"></span>
+                            </div>
+                            <button class="testimonios-nav-btn next" onclick="nextTestimonios()"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-asesores">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para una asesoría personalizada?</h2>
+                <button class="cta-btn-primary" onclick="openFormModal('cta-asesores-solicitar')">
+                    <i class="fas fa-calculator"></i>
+                    Solicitar Análisis Gratuito
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <div id="form-container"></div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>¡Solicitud enviada!</h3>
+            <p>Te contactaremos dentro de 24 horas. ¡Gracias!</p>
+            <button class="cta-btn-primary" onclick="closeModal('successModal')">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/56912345678" class="whatsapp-float-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* ========================================= */
+/* ARCHIVO PRINCIPAL DE ESTILOS              */
+/* Este archivo importa todos los demás.     */
+/* ========================================= */
+
+/* 1. Estilos base y variables */
+@import url('_base.css');
+
+/* 2. Componentes modulares */
+@import url('components/_header.css');
+@import url('components/_hero.css');
+@import url('components/_secciones.css');
+@import url('components/_formulario.css');
+@import url('components/_footer.css');
+
+/* 3. Estilos responsive (siempre al final) */
+@import url('_responsive.css');

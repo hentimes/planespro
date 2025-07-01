@@ -1,0 +1,48 @@
+/* Archivo: components/_secciones.css */
+.section-header { text-align: center; margin-bottom: 3rem; }
+.section-header h2 { font-size: 2.2rem; font-weight: 700; margin-bottom: var(--spacing-md); }
+.section-header p { font-size: 1.1rem; color: var(--color-gray-600); }
+/* Como funciona */
+.como-funciona { padding: 4rem 0; }
+.proceso-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-xl); }
+.step { text-align: center; padding: var(--spacing-xl); }
+.step-icon { width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: var(--color-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-lg); font-size: 2rem; }
+.step h3 { font-size: 1.25rem; margin-bottom: var(--spacing-md); }
+/* Casos de Éxito y Testimonios */
+.casos-exito, .testimonios { padding: 4rem 0; background: var(--color-light); }
+.casos-carousel, .testimonios-carousel-container { max-width: 900px; margin: 0 auto; position: relative; }
+.caso-card, .testimonio-card { background: var(--color-white); padding: var(--spacing-xl); border-radius: var(--border-radius-xl); box-shadow: var(--shadow-md); }
+.caso-card { display: none; }
+.caso-card.active { display: block; }
+.caso-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-lg); }
+.ahorro-badge { background: var(--color-secondary); color: var(--color-white); padding: 0.5rem 1rem; border-radius: var(--border-radius-lg); font-size: 0.9rem; font-weight: 600; }
+.caso-antes-despues { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); margin-bottom: var(--spacing-lg); }
+.antes { background: #fff5f5; border-left: 4px solid var(--color-danger); padding: var(--spacing-lg); }
+.despues { background: #f0fff4; border-left: 4px solid var(--color-secondary); padding: var(--spacing-lg); }
+.resultado { background: var(--color-primary); color: var(--color-white); padding: var(--spacing-lg); border-radius: var(--border-radius-lg); text-align: center; }
+.carousel-nav, .testimonios-nav { display: flex; justify-content: center; align-items: center; gap: var(--spacing-lg); margin-top: var(--spacing-xl); }
+.nav-btn, .testimonios-nav-btn { background: var(--color-white); border: 2px solid var(--color-primary); color: var(--color-primary); width: 40px; height: 40px; border-radius: 50%; cursor: pointer; }
+.carousel-dots, .testimonios-dots { display: flex; gap: 0.5rem; }
+.dot, .testimonios-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--color-gray-200); cursor: pointer; }
+.dot.active, .testimonios-dot.active { background: var(--color-primary); }
+.testimonios-grid, .testimonios-grid-carousel { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl); }
+.testimonio-card p { font-style: italic; color: var(--color-gray-700); margin-bottom: var(--spacing-lg); }
+/* CTA Final */
+.cta-final, .cta-asesores { padding: 4rem 0; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: var(--color-white); text-align: center; }
+.cta-content h2 { font-size: 2.2rem; }
+.cta-buttons { display: flex; justify-content: center; gap: var(--spacing-lg); margin-top: var(--spacing-xl); }
+.cta-btn-primary { background: var(--color-secondary); color: var(--color-white); border: none; padding: 1rem 2rem; border-radius: var(--border-radius-md); font-weight: 600; cursor: pointer; }
+/* Asesores */
+.hero-asesores { background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: var(--color-white); padding: 140px 0 4rem; text-align: center; }
+.equipo-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl); max-width: 600px; margin: 2rem auto 0; }
+.stat-item strong { font-size: 2.2rem; }
+.asesores-detallados { padding: 4rem 0; }
+.asesor-detalle { background: var(--color-white); border-radius: var(--border-radius-xl); box-shadow: var(--shadow-lg); margin-bottom: 3rem; overflow: hidden; }
+.asesor-info-completa { padding: var(--spacing-xl); background: var(--color-light); }
+.asesor-perfil { display: grid; grid-template-columns: auto 1fr; gap: var(--spacing-xl); align-items: center; }
+.asesor-avatar-grande { width: 120px; height: 120px; border-radius: 50%; }
+.asesor-avatar-grande .asesor-foto { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.asesor-titulo { color: var(--color-primary); font-weight: 600; }
+.especialidades-lista { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.especialidad { background: var(--color-primary); color: var(--color-white); padding: 0.25rem 0.75rem; border-radius: var(--border-radius-md); font-size: 0.8rem; }
+.testimonios-asesor { padding: var(--spacing-xl); }

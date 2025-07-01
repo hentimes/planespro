@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanesPro.cl - Especialistas en Seguros de Salud</title>
+    <meta name="description" content="Especialistas certificados en Isapre. Ahorra hasta $180,000 mensuales optimizando tu plan de salud. Asesoría responsable y personalizada.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="img/logos_planespro/logo-planespro-obs.png" alt="PlanesPro.cl Logo" class="logo-img">
+                    <span class="logo-text">PlanesPro.cl</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#como-funciona" class="nav-link">Proceso</a>
+                    <a href="#casos-exito" class="nav-link">Casos de Éxito</a>
+                    <a href="asesores.html" class="nav-link">Nuestros Asesores</a>
+                    <button class="cta-btn-header" onclick="openFormModal('header-analizar-plan')">
+                        <i class="fas fa-calculator"></i>
+                        Analizar Mi Plan
+                    </button>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-container">
+                <div class="hero-split-optimized">
+                    <div class="hero-main-vertical">
+                        <div class="headline-group">
+                            <h1 class="hero-title-main">Maximiza tu 7% obligatorio</h1>
+                            <p class="hero-subtitle-attached">Mismo 7%, mejor resultado + <span class="highlight">ahorro promedio $45,000 mensuales</span></p>
+                        </div>
+                        <div class="metrics-cards">
+                            <div class="metric-card"><i class="fas fa-dollar-sign"></i><span class="metric-number">$45,000</span><span class="metric-label">Ahorro Promedio</span></div>
+                            <div class="metric-card featured"><i class="fas fa-chart-line"></i><span class="metric-number">95%</span><span class="metric-label">Ahorra mínimo $20k</span></div>
+                            <div class="metric-card"><i class="fas fa-users"></i><span class="metric-number">500+</span><span class="metric-label">Familias optimizadas</span></div>
+                        </div>
+                        <div class="logos-carousel-section">
+                            <div class="logos-carousel">
+                                <img src="img/logos_isapres/nuevamasvida.png" alt="Nueva Masvida" class="logo-carousel-item">
+                                <img src="img/logos_isapres/consalud.png" alt="Consalud" class="logo-carousel-item">
+                                <img src="img/logos_isapres/banmedica-logo.png" alt="Banmédica" class="logo-carousel-item">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-calculator">
+                        <div class="calculator-card">
+                            <h3>Calcula tu ahorro potencial</h3>
+                            <div class="calculator-content">
+                                <div class="input-group">
+                                    <label for="current-payment">¿Cuánto pagas mensualmente?</label>
+                                    <input type="range" id="current-payment" min="50000" max="300000" value="150000">
+                                    <span id="payment-display">$150,000</span>
+                                </div>
+                                <div class="savings-result"><span class="savings-label">Podrías ahorrar:</span><span class="savings-amount" id="potential-savings">$45,000</span></div>
+                                <button class="cta-btn-breathe" onclick="openFormModal('hero-optimizar-ahora')"><i class="fas fa-calculator"></i><span>Optimizar Mi 7% Ahora</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="como-funciona">
+             <div class="container">
+                <div class="section-header"><h2>Nuestro Proceso</h2></div>
+                <div class="proceso-steps">
+                    <div class="step"><div class="step-icon"><i class="fas fa-search"></i></div><h3>1. Análisis</h3><p>Evaluamos tu situación actual.</p></div>
+                    <div class="step"><div class="step-icon"><i class="fas fa-balance-scale"></i></div><h3>2. Comparación</h3><p>Comparamos todas las opciones.</p></div>
+                    <div class="step"><div class="step-icon"><i class="fas fa-clipboard-check"></i></div><h3>3. Recomendación</h3><p>Te presentamos la mejor opción.</p></div>
+                    <div class="step"><div class="step-icon"><i class="fas fa-handshake"></i></div><h3>4. Acompañamiento</h3><p>Te guiamos en todo el proceso.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="casos-exito" class="casos-exito">
+            <div class="container">
+                <div class="section-header"><h2>Casos Reales de Optimización</h2></div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+             <div class="footer-content">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo"><span class="logo-text">PlanesPro.cl</span></a>
+                    <p>Especialistas certificados en seguros de salud.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <div class="contact-item"><span>WhatsApp: <strong>+56 9 1234 5678</strong></span></div>
+                    <div class="contact-item"><span>Email: <strong>contacto@planespro.cl</strong></span></div>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 PlanesPro.cl</p></div>
+        </div>
+    </footer>
+    
+    <div id="form-container"></div>
+    
+    <div id="successModal" class="modal">
+        </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
